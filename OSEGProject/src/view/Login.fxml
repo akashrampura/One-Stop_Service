@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.layout.GridPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginAccount">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="50.0" layoutX="600.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@exit-icon-17.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="30.0" layoutY="20.0" prefHeight="79.0" prefWidth="840.0" style="-fx-font-weight: bold; -fx-font-size: 20; -fx-background-image: url('view/images/Header3.png');" text=" " textFill="#2100ff">
+         <font>
+            <Font name="Times New Roman Bold" size="73.0" />
+         </font>
+      </Label>
+      <!-- Anchor Pane for User Fields -->
+      <AnchorPane layoutX="30.0" layoutY="110.0" prefHeight="360.0" prefWidth="420.0" style="-fx-background-image: url('view/images/BG8.png');">
+	<children>
+		<Label layoutX="34.0" layoutY="35.0"
+			text="Are you new to One Stop Services ? Please, Sign Up">
+			<font>
+				<Font name="Calibri Light Italic" size="12.0" />
+			</font>
+		</Label>
+		
+		<Hyperlink layoutX="340.0" layoutY="33.0" text="Sign Up"
+			onAction="#registerPage" />
+			
+		
+		<!--  <Text layoutX="34.0" layoutY="100.0" strokeType="OUTSIDE"
+			strokeWidth="0.0" style="-fx-font: 30;" text="Login As (Administrator/User)">
+			<font>
+				<Font name="System Bold" size="15.0" />
+			</font>
+			</Text>
+			
+		<ChoiceBox fx:id="selection" accessibleRole="MENU_BUTTON"
+			accessibleText="\@hawk.iit.edu" focusTraversable="false"
+			layoutX="250.0" layoutY="80.0" prefWidth="150.0" />-->
+			
+		<Text layoutX="34.0" layoutY="153.0" strokeType="OUTSIDE"
+			strokeWidth="0.0" style="-fx-font: 30;" text="Email ">
+			<font>
+				<Font name="System Bold" size="15.0" />
+			</font>
+		</Text>
+		
+		<TextField fx:id="emailField" layoutX="190.0"
+			layoutY="134.0" prefWidth="180.0"
+			style="-fx-background-color: white;" />
+		<Text layoutX="34.0" layoutY="210.0" strokeType="OUTSIDE"
+			strokeWidth="0.0" style="-fx-font: 30;" text="Password             ">
+			<font>
+				<Font name="System Bold" size="15.0" />
+			</font>
+		</Text>
+		<PasswordField fx:id="passwordField" layoutX="190.0"
+			layoutY="191.0" style="-fx-background-color: white;" />
+		<Button layoutX="120.0" layoutY="284.0" mnemonicParsing="false"
+			onAction="#LoginAcc" style="-fx-background-color: #00BFFF;"
+			text="Login" />
+		<Button layoutX="220.0" layoutY="284.0" mnemonicParsing="false"
+			onAction="#clearFields" style="-fx-background-color: #00BFFF;"
+			text="Clear" />
+
+	
+
+		
+
+	</children>
+</AnchorPane>
+<AnchorPane layoutX="460.0" layoutY="110.0" prefHeight="360.0" prefWidth="410.0" style="-fx-background-image: url('view/images/Save.png');">
+	</AnchorPane>
+   </children>
+</AnchorPane>
